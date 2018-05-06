@@ -7,4 +7,6 @@ issue:  Task
 
 ## Description {#description data-type=description}
 
-Walk `issues` directory and generate HTML files with `pandoc`.
+Walk `issues` directory and generate HTML files with `pandoc.
+
+## Commit {data-commit=f3731fd3a149a4312eff2d50455a63e2a122eaa9}
