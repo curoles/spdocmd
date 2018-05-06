@@ -12,4 +12,6 @@ Inside `spdoc` directory, program `help` with CLI interface:
 ```terminal
 help get started
 help add user
-``` 
+```
+
+## Commit {data-type=commit data-commit=1bdbf96b68536dae59bfe31f46365cc616996550}
