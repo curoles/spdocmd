@@ -2,11 +2,11 @@
 
 puts "Creating spdoc skeleton..."
 
-`ln -s -r bin/help.rb help`
+`ln -s -r -f bin/help.rb help`
 
-`mkdir -p users/`
-`ln -s -r bin/new-user.rb users/new`
+`mkdir -p root/users/`
+`ln -s -r -f bin/new-user.rb root/users/new`
 
 `mkdir -p issues/`
-`ln -s -r bin/new-issue.rb issues/new`
+`ln -s -r -f bin/new-issue.rb root/issues/new`
 

@@ -72,9 +72,9 @@ defmodule Generator do
       _ ->
         :unknown_format
     end
-    category = Enum.at(Path.split(fname), -2)
+    category = Enum.drop(Path.split(fname), -1) |> Enum.reverse
     unless format == :unknown_format do
-      IO.puts "file=#{fname}, category=#{category}, ext=#{fext}"
+      IO.puts "file=#{fname}, category=#{Enum.join(category,"/")}, ext=#{fext}"
       generate_doc_for(fname, category, fext, dest)
     end
   end
@@ -91,10 +91,11 @@ defmodule Generator do
 
   defp generate_doc_for(fname, category, fext, dest) do
     case category do
-      "issues" ->
+      ["issues" | _] ->
         generate_issue(fname, fext, dest)
+      #["notes", user, "users", | _] ->
       _ ->
-        IO.puts "Error: unknown category '#{category}'"
+        IO.puts "Error: unknown category '#{Enum.join(category,"/")}'"
     end
   end
 
