@@ -1,5 +1,5 @@
 ---
-title:  Task: Make `help` CLI tool
+title:  'Task: Make `help` CLI tool'
 author: Igor Lesik
 date:   2018-5-5 18:11:39 PDT
 issue:  Task
